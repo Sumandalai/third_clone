@@ -1,0 +1,115 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,900&family=Work+Sans:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 9px 32px 8px 8px;
+    padding-left: 6px;
+}
+.left-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+/* font-family: 'Work Sans', sans-serif; */
+     /* padding-top: 23px; */
+     font-size: 34px;
+}
+.right-nav{
+    padding-top: 23px;
+}
+.list-right-nav{
+  display: flex;
+  list-style: none;
+}
+.right-nav a{
+    padding: 0px 15px;
+    text-decoration: none;
+    padding: 5px 15px;
+    color: aquamarine;
+}
+.navbar img{
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+}
+.navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 63px;
+    width: 98%;
+    z-index: -1;
+    opacity: 0.5;
+ 
+ }
+ .right-nav a:hover{
+    color: beige;
+ }
+ .home{
+    padding-top: 111px;
+    padding-bottom: 318px;
+ }
+ .home::before{
+    content: " ";
+   background:url(https://www.freecodecamp.org/news/content/images/size/w2000/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg) no-repeat center center/cover;
+   position: absolute;
+   top: 0px;
+   height: 500px;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.6;  
+}
+section{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.mongram-items{
+    width: 33%;
+}
+.mongram-items > div{
+position: relative;
+left: 278px;
+top: 20px;
+background-color: aqua;
+display: inline;
+}
+
+.mongram-items img{
+display: block;
+margin: auto;
+
+border: 2px solid;
+border-radius: 8px;
+}
+.mongram-items img:hover{
+  transform: scale(0.7);
+  transition: 0.5s;
+}
+/* footer */
+footer{
+    background-color: rgb(137, 139, 139);
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    
+    left: 37px;
+    padding: 7px;
+    width: 90%;
+}
+.dirn-colm{
+    display: flex;
+    flex-direction: column;
+    
+}
+/* utility class */
+.center{
+    text-align: center;
+}
